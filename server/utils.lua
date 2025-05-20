@@ -68,7 +68,7 @@ function GetPlayerMoneyOnline(source, type)
         elseif type == 'cash' then
             return tonumber(Player.PlayerData.money.cash)
         end
-    elseif Config.Framework == 'newesx' or Config.Framework == 'oldesx' then
+    elseif Config.Framework == 'esx' or Config.Framework == 'oldesx' then
         local Player = frameworkObject.GetPlayerFromId(tonumber(source))
         if type == 'bank' then
             return tonumber(Player.getAccount('bank').money)
